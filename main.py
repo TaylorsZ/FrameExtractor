@@ -27,6 +27,10 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         self.extractor_thread:Optional[ExtractorThread] = None
         self.update_ui()
         self.spinBox.valueChanged.connect(self.spinbox_changed)
+        # logger.info("\033[3mHello, world!\033[0m")
+        # logger.debug("\033[1m\033[42mHello, world!\033[0m")
+        # time.sleep(1)
+        # QMessageBox.about(self, "提示", "欢迎使用视频抽帧工具，本工具仅供学习交流使用，请勿用于商业用途。")
     def spinbox_changed(self, value):
         self.save_interval = value
         self.config.set(config_section_name, 'saveInterval', str(value))
