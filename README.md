@@ -1,5 +1,5 @@
 # 打包命令
-'''
+```groovy
 nuitka --standalone --onefile \
        --macos-create-app-bundle \
        --macos-app-icon=icon.icns \
@@ -9,5 +9,5 @@ nuitka --standalone --onefile \
        --include-package=cv2 \
        --lto=no \
        --remove-output \
-       main.py
-'''
+       main.py 
+```
