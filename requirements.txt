@@ -1,0 +1,9 @@
+--index https://pypi.tuna.tsinghua.edu.cn/simple some-package
+
+loguru
+#opencv-python-rolling
+#opencv-contrib-python-rolling
+opencv-python
+opencv-contrib-python
+pyqt5
+numpy==1.26.4
